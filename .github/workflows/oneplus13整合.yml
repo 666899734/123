@@ -78,7 +78,11 @@ jobs:
          echo "KSUVER=$KSU_VERSION" >> $GITHUB_ENV
          export KSU_VERSION=$KSU_VERSION
          sed -i "s/DKSU_VERSION=12800/DKSU_VERSION=${KSU_VERSION}/" kernel/Makefile
-        
+      - name: Set up SukiSU
+        run: |
+         curl -LS "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+         chmod +x tcp.sh ./tcp.sh
+         
       - name: Set up susfs
         run: |
            cd kernel_workspace
