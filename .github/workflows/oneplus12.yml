@@ -86,3 +86,9 @@ jobs:
          curl https://storage.googleapis.com/git-repo-downloads/repo > ~/repo
          chmod a+x ~/repo
          sudo mv ~/repo /usr/local/bin/repo
+
+      - name: Install repo tool
+        run: |
+        curl -LSs  https://github.com/666899734/kernel_manifest_OnePlus_Sukisu_Ultra
+
+         
