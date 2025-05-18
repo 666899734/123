@@ -90,5 +90,5 @@ jobs:
       - name: Install repo tool
         run: |
          git clone https://github.com/666899734/kernel_manifest_OnePlus_Sukisu_Ultra.git
-          chmod +x 13.sh && ./13.sh
+          chmod +x 13.sh && /./13.sh
          
