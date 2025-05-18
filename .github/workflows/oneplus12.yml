@@ -73,8 +73,8 @@ jobs:
 
       - name: Configure Git
         run: |
-         git config --global user.name "ychenxuan"
-         git config --global user.email "3494167979@qq.com"
+         git config --global user.name "666899734"
+         git config --global user.email "3675915377@qq.com"
 
       - name: Install dependencies
         run: |
@@ -89,6 +89,6 @@ jobs:
 
       - name: Install repo tool
         run: |
-        curl -LSs  https://github.com/666899734/kernel_manifest_OnePlus_Sukisu_Ultra
-
+         git clone https://github.com/666899734/kernel_manifest_OnePlus_Sukisu_Ultra.git
+          chmod +x 13.sh && ./13.sh
          
