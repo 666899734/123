@@ -89,6 +89,8 @@ jobs:
 
       - name: Install repo tool
         run: |
+         mkdir kernel_workspace && cd kernel_workspace
          git clone https://github.com/666899734/kernel_manifest_OnePlus_Sukisu_Ultra.git
-          chmod +x 13.sh && /./13.sh
+         cd kernel_manifest_OnePlus_Sukisu_Ultra
+         chmod +x 13.sh && ./13.sh
          
